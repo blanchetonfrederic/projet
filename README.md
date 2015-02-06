@@ -52,7 +52,7 @@ module.exports = function(grunt) {
       },
       js_frontend: {
         src: [
-          '../jquery/dist/js/jquery.js',/Attention à avoir le répertoire jquery à la racine du répertoire Projects. Téléchargé à chaque bower install
+          '../jquery/dist/jquery.js',//Attention à avoir le répertoire jquery à la racine du répertoire Projects. Téléchargé à chaque bower install
           'js/transition.js',
           'js/alert.js',
           'js/button.js',
