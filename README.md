@@ -8,7 +8,7 @@
   "directory": "/"
 }```
 (Cela permettra d'installer Bootstrap à la racine du répertoire Projects.)
-- Veiller à ce que le projet soit accessible via une <strong>url local</strong>  (exemple : monprojetweb.local.fr)(http://www.dewep.net/Blog/Article-6/Creer-un-nom-de-domaine-en-local-avec-Apache-sur-Windows). Cela permettra la consultation du site local sur plusieurs supports.
+- Veiller à ce que le projet soit accessible via une <strong>url locale</strong>  (exemple : monprojetweb.local.fr)(http://www.dewep.net/Blog/Article-6/Creer-un-nom-de-domaine-en-local-avec-Apache-sur-Windows). Cela permettra la consultation du site local sur plusieurs supports.
 
 <h2>Step 1 : Bower</h2>
 - Se déplacer à la racine du répertoire <kbd>/Projects</kbd>
@@ -28,7 +28,8 @@
 <h2>Step 4</h2> 
 - Remplacer le contenu du fichier <kbd>Gruntfile.js</kbd> (dans le répertoire du projet concerné) par :
 
-```module.exports = function(grunt) {
+```
+module.exports = function(grunt) {
 
   //Initializing the configuration object
     grunt.initConfig({
@@ -128,7 +129,8 @@
   // Task definition
   grunt.registerTask('default', ['watch']);
 
-};```
+};
+```
 
 <strong>IMPORTANT : en cas de rajout de fichier JS, les placer dans le répertoire <kbd>/js</kbd> et les déclarer dans le fichier <kbd>Gruntfile.js</kbd></strong>
 
