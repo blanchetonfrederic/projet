@@ -15,17 +15,17 @@
 - Lancer la commande <kbd>bower install bootstrap</kbd> 
 - Renommer le réperdoire <kbd>/Bootstrap</kbd> avec le nom du projet concerné, exemple <kbd>projet</kbd>
 
-<h2>Step 2</h2>
+<h2>Step 2 : Grunt</h2>
 - Lancer la commande <kbd>sudo npm install -g grunt-cli</kbd>
 - Se déplacer à la racine du répertoire <kbd>/Projet</kbd>
 - Lancer la commande <kbd>npm install</kbd>
 
-<h2>Step 3</h2>
+<h2>Step 3 : Git</h2>
 - Lancer la commande <kbd>git init</kbd>
 - Lancer la commande <kbd>echo node_modules>.gitignore</kbd> pour créer un fichier .gitignore et permettre à GIT d'ignorer les modules NODE.js
 - Lancer la commande <kbd>git add</kbd> puis <kbd>git commit -m "Initialisation"</kbd> puiq <kbd>git status</kbd> pour contrôler que tout est en ordre.
 
-<h2>Step 4</h2> 
+<h2>Step 4 : Gruntfile.js</h2> 
 - Remplacer le contenu du fichier <kbd>Gruntfile.js</kbd> (dans le répertoire du projet concerné) par :
 
 ```
@@ -134,11 +134,11 @@ module.exports = function(grunt) {
 
 <strong>IMPORTANT : en cas de rajout de fichier JS, les placer dans le répertoire <kbd>/js</kbd> et les déclarer dans le fichier <kbd>Gruntfile.js</kbd></strong>
 
-<h2>Step 5</h2> 
+<h2>Step 5 : Less et JS</h2> 
 - Créer un fichier <kbd>configuration.js</kbd> dans le répertoire <kbd>/js</kbd>. Ce fichier intégrera le JS personnalisé.
 - Créer un fichier <kbd>style.less</kbd> dans le répertoire <kbd>/less</kbd>. Ce fichier intégrera le CSS personnalisé. Ne pas oublier de le déclarer dans le fichier <kbd>bootstrap.less</kbd>. 
 
-<h2>Step 6 </h2>
+<h2>Step 6 : Watch</h2>
 - Lancer la commande <kbd>grunt watch</kbd> et ouvrir le projet sur tous les navigateurs et supports. A chaque <kbd>CTRL + S</kbd> dans un fichier LESS, JS ou HTML, tous les instances seront rafraîchies automatiquement.
 <<strong>IMPORTANT : Le live reload peut ne pas fonctionner la première fois. Il faut simplement sélectionner un fichier less, html et js et faire un CTRL + S pour chacun et rafraîchir la page.</strong>
 
