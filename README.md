@@ -133,7 +133,7 @@ module.exports = function(grunt) {
 ```
 
 <strong>IMPORTANT : 
-- Intégrer <kbd><script src="//localhost:35729/livereload.js"></script></kbd> dans le footer pour activer le livereload
+- Intégrer ```<script src="//localhost:35729/livereload.js"></script>``` dans le footer pour activer le livereload
 - en cas de rajout de fichier JS, les placer dans le répertoire <kbd>/js</kbd> et les déclarer dans le fichier <kbd>Gruntfile.js</kbd></strong>
 
 <h2>Step 5 : Less et JS</h2> 
